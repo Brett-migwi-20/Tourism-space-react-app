@@ -1,0 +1,222 @@
+// Import files
+@import '../../assets/styles/common.scss';
+// Global variables
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .nav-container{
+        width: 100vw;
+        padding: 0em 1em;
+        height: 4em;
+        background-color: black;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 10;
+        @include flex_model(1);
+        flex-direction: row;
+
+        .nav-list-box{
+            position: absolute;
+            height: 100vh;
+            width: 60%;
+            top: 0em;
+            right: 0em;
+            background-color: rgba(10, 10, 10, 0.404);
+            z-index: 200;
+            flex-direction: column;
+            justify-content: center;
+            
+              .nav-list-item{
+                  height: 10vh;
+                //   background-color: chartreuse;
+                 color: white;
+                  @include flex_model(1);
+                  align-items: center;
+                  justify-content: center;
+
+                  .list-number{
+                    display: none;
+                }
+                  
+              }
+        }
+        .nav-burger{
+            padding-top: 5px;
+            position: relative;
+            z-index: 250;
+            width: 2.2em;
+            height: 2em;
+            // background-color: aqua;
+            @include flex_model(1);
+            flex-direction: column;
+
+            .nav-burger-line{
+                width: 24px;
+                height: 3px;
+                background-color: white;
+                margin-bottom: 5px;  
+                
+            } 
+            // #top{
+            //     animation-duration: 0.5s;
+            //     animation-fill-mode: forwards;
+            //     animation-timing-function: ease-in-out;
+            //     transform-origin: 0% 0%;
+
+            // }
+            // #middle{
+            //     animation: Middle;
+            //     animation-duration: 0.5s;
+            //     animation-fill-mode: forwards;
+
+            // }
+
+            // #bottom{
+            //     animation: Bottom;
+            //     animation-duration: 0.5s;
+            //     animation-fill-mode: forwards;
+            //     animation-timing-function: ease-in-out;
+            //     transform-origin: 0% 0%;
+            // }
+        }
+    }
+    @keyframes Top {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(30deg);
+        }
+        
+    }
+    @keyframes Middle {
+        100%{
+            opacity: 0.0;
+        }
+
+        
+    }
+    @keyframes Bottom {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-30deg);
+        }
+    }
+}
+    
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {
+//     .nav-container{
+//         padding: 0em 1em;
+//         height: 4em;
+//         background-color: black;
+//         @include flex_model(1);
+//     }
+// }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nav-container{
+        // padding: 0em 1em;
+        width: 100vw;
+        padding-left: 1em;
+        height: 4em;
+        // background-color: black;
+        @include flex_model(1);
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 10;
+
+        .nav-list-box{
+            border: none;
+            padding-right: 2em;
+            position: relative;
+            right: 0em;
+            display: flex !important;
+            height: 4em;
+            background-color: rgba(0, 0, 0, 0.459);
+            background: rgba( 22, 21, 21, 0.25 );
+            // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 6.5px );
+            -webkit-backdrop-filter: blur( 6.5px );
+            
+
+
+            .nav-list-item{
+                width: auto;
+                margin: 0em 2em;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                @include flex_model(1);
+
+                .list-number{
+                    display: none;
+                }
+            }
+            .active{
+                border-bottom: 2px solid white;
+            }
+        }
+
+        .nav-burger{
+            display: none;
+        }
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .nav-container{
+        position: absolute;
+        width: 100vw;
+        padding-top: 3em;
+        
+        .nav-list-box{
+            
+            position: relative;
+            z-index: 100;
+            border: none;
+
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 70%;
+                height: 1px;
+                right: 40.5em;
+                top: 2em;
+                background-color: rgba(255, 255, 255, 0.842);
+                z-index: 150;
+            }
+            .nav-list-item:first-child{
+                margin-left: 6em;
+            }
+            .list-number{
+                padding-right: 0.5em;
+                font-weight: 900;
+                display: inline-block !important;
+            }
+
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+// Animation Burger
+

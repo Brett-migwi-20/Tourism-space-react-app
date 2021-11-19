@@ -1,0 +1,266 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 787px) {
+  .bg-image {
+    background-image: url("../../../assets/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .grid-container {
+    padding-top: 9em;
+  }
+  .grid-container .grid-box-left {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3em 6em;
+    color: white;
+    text-align: center;
+  }
+  .grid-container .grid-box-left .title-head-first {
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.700000047683716px;
+    text-align: center;
+  }
+  .grid-container .grid-box-left .title-space {
+    font-family: Bellefair;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .grid-container .grid-box-left .para {
+    font-family: Barlow;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .grid-container .grid-box-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-items: center;
+  }
+  .grid-container .grid-box-right .letter {
+    display: block;
+    width: 150px;
+    height: 150px;
+    left: 113px;
+    top: 469px;
+    border-radius: 50%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 100;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bg-image {
+    background-image: url("../../../assets/home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .grid-container {
+    padding-top: 9em;
+  }
+  .grid-container .grid-box-left {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3em 6em;
+    color: white;
+    text-align: center;
+  }
+  .grid-container .grid-box-left .title-head-first {
+    font-family: Barlow Condensed;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: center;
+  }
+  .grid-container .grid-box-left .title-space {
+    font-family: 'Bellefair';
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 16px 0em;
+  }
+  .grid-container .grid-box-left .para {
+    width: 310px;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .grid-container .grid-box-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-items: center;
+  }
+  .grid-container .grid-box-right .letter {
+    display: block;
+    width: 274px;
+    height: 274px;
+    left: 910px;
+    top: 320px;
+    border-radius: 50%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 100;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bg-image {
+    background-image: url("../../../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: 85vh;
+  }
+  .grid-container .grid-box-left,
+  .grid-container .grid-box-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .grid-container .grid-box-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0em 7em;
+  }
+  .grid-container .grid-box-left .title-head-first {
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 4.724999904632568px;
+    text-align: left;
+  }
+  .grid-container .grid-box-left .title-space {
+    font-family: Bellefair;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 172px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-family: 'Bellefair', serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  .grid-container .grid-box-left .para {
+    margin-top: 2em;
+    height: 128px;
+    width: 444px;
+    left: 0.5px;
+    top: 254px;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .grid-container .explore-box {
+    margin-top: 12rem;
+    margin-left: 4em;
+  }
+  .grid-container .explore-box .letter {
+    display: block;
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    left: 910px;
+    top: 320px;
+    border-radius: 50%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 100;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=Home.css.map */

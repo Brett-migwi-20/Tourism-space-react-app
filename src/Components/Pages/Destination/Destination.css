@@ -1,0 +1,32 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .bg-image-d {
+    min-height: 100vh;
+    background-image: url("./../../../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bg-image-d {
+    background-image: url("./../../../assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .title-destination {
+    padding-top: 6em;
+    padding-bottom: 2em;
+    padding-left: 4em;
+    color: white;
+  }
+  .title-destination .destination-number {
+    padding-right: 7px;
+    font-weight: 900;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=Destination.css.map */

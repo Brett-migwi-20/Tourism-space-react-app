@@ -1,0 +1,16 @@
+@mixin flex_model($num) {
+    display: flex;
+ @if $num == 1 {
+     align-items: center;
+    
+ }
+ @if $num == 2{
+    align-items: center;
+    justify-content: center;
+ }
+}
+
+@mixin bgImage() {
+    background-repeat: no-repeat;
+    background-size: cover;
+}

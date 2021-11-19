@@ -1,0 +1,49 @@
+
+@import '../../../assets/styles/common.scss';
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    .bg-image-d{
+        min-height: 100vh;
+        background-image: url('./../../../assets/destination/background-destination-mobile.jpg');
+        @include bgImage();
+    }
+
+}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {
+
+// }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .bg-image-d{
+        background-image: url('./../../../assets/destination/background-destination-desktop.jpg');
+        @include bgImage();
+    }
+    .title-destination{
+        // margin-top: 6em;
+        padding-top: 6em;
+        padding-bottom: 2em;
+        padding-left: 4em;
+        // background-color: red;
+        color: white;
+
+        .destination-number{
+            padding-right: 7px;
+            font-weight: 900;
+        }
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
