@@ -14,3 +14,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@mixin grid_layer($n) {
+    @if $n == 1{
+        display: grid;
+    }
+    @if $n == 2{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Colors 
+$bg-color: #0B0D17;
+$text-color:#D0D6F9;
+$bg-white:#fff;

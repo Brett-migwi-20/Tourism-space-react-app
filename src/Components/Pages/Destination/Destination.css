@@ -1,4 +1,8 @@
 /* Extra small devices (phones, 600px and down) */
+body {
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 767px) {
   .bg-image-d {
     min-height: 100vh;
@@ -16,15 +20,129 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .nav-destination .nav-right-d {
+    padding-left: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2em;
+  }
+  .nav-destination .nav-right-d .d-nav-link {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-right: 1.2em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .nav-destination .nav-right-d .d-nav-link:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .nav-destination .nav-right-d .active {
+    border-bottom: 1px solid #fff;
+  }
+  .grid-container-d {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    min-height: 70vh !important;
+    padding-top: 0em !important;
+  }
+  .grid-container-d .grid-container-left-d {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0.3em;
+  }
+  .grid-container-d .grid-container-left-d .planet-image-holder img {
+    width: 400px;
+    height: 400px;
+  }
   .title-destination {
     padding-top: 6em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     padding-left: 4em;
     color: white;
   }
   .title-destination .destination-number {
     padding-right: 7px;
     font-weight: 900;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 24px;
+    /* identical to box height */
+    letter-spacing: 3.375px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .destination-details-title {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 115px;
+    color: #fff;
+    padding-left: 0.2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.1em;
+    text-transform: uppercase;
+  }
+  .destination-details-para {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: white;
+    max-width: 420px;
+    margin-left: 1.2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid rgba(230, 225, 225, 0.658);
+  }
+  .destination-details-stats {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    color: #fff;
+    margin-top: 1.5em;
+    padding-left: 1.2em;
+  }
+  .destination-details-stats .destination-details-distance-word,
+  .destination-details-stats .destination-details-time-word {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    margin-bottom: 0.4em;
+  }
+  .destination-details-stats .destination-details-distance-num,
+  .destination-details-stats .destination-details-time-num {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 0.3em;
   }
 }
 
