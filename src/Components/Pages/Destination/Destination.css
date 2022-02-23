@@ -20,6 +20,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .destination-name-title {
+    text-transform: uppercase;
+  }
   .nav-destination .nav-right-d {
     padding-left: 2em;
     display: -webkit-box;

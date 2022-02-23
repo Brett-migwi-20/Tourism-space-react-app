@@ -31,6 +31,9 @@ body{
         background-image: url('./../../../assets/destination/background-destination-desktop.jpg');
         @include bgImage();
     }
+    .destination-name-title{
+        text-transform: uppercase;
+    }
      // Destination min Nav-bar
     .nav-destination{
         // background-color: aqua;

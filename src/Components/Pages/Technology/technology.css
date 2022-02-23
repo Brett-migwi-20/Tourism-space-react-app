@@ -1,0 +1,65 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .bg-image-t {
+    background-image: url("./../../../assets/technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bg-image-t {
+    background-image: url("./../../../assets/technology/background-technology-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bg-image-t {
+    background-image: url("./../../../assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .title-technology {
+    padding-top: 6em;
+    padding-bottom: 1em;
+    padding-left: 4em;
+    color: white;
+    text-transform: uppercase;
+  }
+  .title-technology .technology-number {
+    padding-right: 7px;
+    font-weight: 900;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .title-technology .rew-name-title {
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 115px;
+    color: #fff;
+    padding-left: 0.2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.1em;
+    text-transform: uppercase;
+  }
+  .grid-container-technology {
+    min-height: 70vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=technology.css.map */
